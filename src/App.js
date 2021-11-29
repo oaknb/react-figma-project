@@ -1,6 +1,6 @@
 
 import './App.css';
-import SinglePage from './Components/SinglePage';
+import SinglePage from './Components/Singlepage/SinglePage';
 
 function App() {
   return (

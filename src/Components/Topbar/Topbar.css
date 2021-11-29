@@ -20,14 +20,44 @@
  
   
   .topRight{
-      display: flex;
-      align-items: center;
-       
-       margin-top: 10px;
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 215px;
+height: 48px;
+left: 1663px;
+top: 12px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 235px;
   }
   .topLeft{
     display: flex;
-    align-items: center;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 214px;
+height: 48px;
+left: 40px;
+top: 12px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 235px;
   }
   
   
@@ -42,12 +72,34 @@
   }
 
   .SearchCenter{
-    background-color:orange ;
-    width:40px;
-    height: 40px;
+    position: static;
+    width: 48px;
+    height: 48px;
+    left: 0px;
+    top: calc(50% - 48px/2);
     
-   
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    /* 01 - Primary/03 Main */
+    
+    background: #FD725F;
+    border-radius: 6px;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+    
+  }
+
+  .Searchhh{
+    left: 12.5%;
+    right: 12.48%;
+    top: 12.5%;
+    bottom: 12.48%;
+    
+    
+
+
+color: #FFFFFF;
   }

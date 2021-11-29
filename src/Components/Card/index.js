@@ -9,11 +9,15 @@ import {
   
  
   
-  CardHeading
-} from "./Card";
+  CardHeading,
+  CardAvatar
+} from "./styles/index";
 
 
-  const Deneme = ({ userData }) => {
+
+
+
+  const Card = ({ userData }) => {
     return (
         <div className="App">
         <CardWrapper>
@@ -23,10 +27,9 @@ import {
   
           <CardBody>
             <CardFieldset>
-            <div className="topbarIconContainer">
-            <img src={userData.picture.medium} alt="" className="topAvatar" />
+                <CardAvatar src={userData.picture.medium} alt="" />
             
-          </div>
+          
             </CardFieldset>
   
             <CardFieldset>
@@ -42,4 +45,4 @@ import {
     )
 }
 
-export default Deneme
+export default Card

@@ -11,8 +11,9 @@ export const CardWrapper = styled.div`
   border-radius: 5px;
   float: left;
   margin-right: 10px;
-
+  justify-content: center;
     margin-left: 4px;
+    display:flex;
 `;
 
 export const CardHeader = styled.header`
@@ -21,14 +22,50 @@ export const CardHeader = styled.header`
 `;
 
 export const CardHeading = styled.h1`
-  font-size: 18px;
-  font-weight: bold;
+osition: static;
+width: 77px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+
+color: #212B36;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
   
 `;
 
 export const CardBody = styled.div`
   padding-right: 32px;
   padding-left: 32px;
+`;
+export const CardAvatar = styled.img`
+position: static;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+/* 06 - Grey/300 */
+
+background: #DFE3E8;
+border-radius: 100px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 16px 0px;
 `;
 
 export const CardFieldset = styled.fieldset`

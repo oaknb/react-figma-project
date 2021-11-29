@@ -1,29 +1,24 @@
 import React from 'react'
-import './Sidebar.css';
+
+import { SidebarHeader, SidebarlitleHeader, Sidebarr } from './style';
 
 function Sidebar() {
     return (
-        <div className="sidebar">
-      <div className="sidebarWrapper">
-        <div className="sidebarMenu">
-          <ul className="sidebarList">
-              <h1>Categories</h1>
-            <li className="sidebarListItem active">
+       <Sidebarr>
+      
+              <SidebarHeader>Categories</SidebarHeader>
+            <SidebarlitleHeader>
               Category 1
-            </li>
-            <li className="sidebarListItem">
+            </SidebarlitleHeader>
+            <SidebarlitleHeader>
             Category 2
-            </li>
-            <li className="sidebarListItem">
+            </SidebarlitleHeader>
+            <SidebarlitleHeader>
             Category 3
-            </li>
-          </ul>
-        </div>
-       
-        
-        
-      </div>
-    </div>
+            </SidebarlitleHeader>
+          
+       </Sidebarr>
+
    
     )
 }
